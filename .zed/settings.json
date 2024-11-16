@@ -1,0 +1,26 @@
+// Folder-specific settings
+//
+// For a full list of overridable settings, and general information on folder-specific settings,
+// see the documentation: https://zed.dev/docs/configuring-zed#settings-files
+{
+  "languages": {
+    "zig": {
+      "formatter": "language_server",
+      "language_servers": ["zls"]
+    }
+  },
+  "lsp": {
+    "zls": {
+      "binary": {
+        "path": "/nix/store/6zbb1cx5z1g32c42f38d18ydkgkry83f-zls/bin/zls",
+        "arguments": ["--enable-debug-log", "--enable-message-tracing"]
+      },
+      "initialization_options": {
+        "enable_build_on_save": true,
+        "inlay_hints_hide_redundant_param_names": true,
+        "warn_style": true,
+        "highlight_global_var_declarations": true
+      }
+    }
+  }
+}
